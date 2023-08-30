@@ -1,0 +1,45 @@
+/* VARIABLES */
+$Font-family: 'Nunito Sans', sans-serif;
+$Font-size-subtext: 2.0rem;
+$Font-size-tittle: 3.6rem;
+$Font-size-text: 1.6rem;
+$Primary-color: #ff9649;
+$Secondary-color: #ff6c0099;
+/* GLOBAL ELEMENTS */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  width: 100%;
+  font-family: $Font-family;
+}
+p{
+  font-weight: 500;
+  font-size: $Font-size-text;
+}
+input, button{
+  font-family: $Font-family;
+}
+h1{
+  font-size: $Font-size-tittle;
+  font-weight: bold;
+  line-height: 34px;
+}
+/* GLOBAL CLASS */
+.inactive{
+  display: none;
+}
+/* ANIMATIONS */
+@keyframes appearAnimation{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

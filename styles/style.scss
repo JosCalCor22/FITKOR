@@ -1,0 +1,7 @@
+@import './GLOBALS/global.scss';
+@import './MAIN/main-calculator.scss';
+@import './MAIN/main-information.scss';
+
+@media(max-width: 780px){
+  @import url('./RESPONSIVE/tableDesing.scss');
+}

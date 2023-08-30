@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/icon.svg" type="image/x-icon">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- FONTS -->
+  <!-- FILE CSS -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" media="(max-width:780px)" href="./styles/RESPONSIVE/tableDesing.css">
+  <link rel="stylesheet" media="(max-width:500px)" href="./styles/RESPONSIVE/mobileDesing.css">
+  <!-- FILE CSS -->
+  <!-- FILE JS -->
+  <script src="./src/script.js" defer></script>
+  <!-- FILE JS -->
+  <title>FITKOR | El placer de cuidarte</title>
+</head>
+<body>
+  <section class="main__board">
+    <article class="main__board--article">
+      <div class="main__board--article-icon">
+        <img src="./images/icon.svg" alt="Icon Website">
+        <div class="main__board--article-icon-slogan">
+          <h2><span>FIT</span>KOR</h2>
+          <p>Beneficiando tu vida</p>
+        </div>
+      </div>
+      <h1>Calculadora de masa corporal</h1>
+      <p>Es importante tener buenas medidas en tu peso en relación a tu estatura y con nuestra calculadora podras obtener un resultado preciso y exacto. Tu salud es esencial en tu dia a dia y cuidar de ella te permitirá disfrutar tu vida.</p>
+    </article>
+    <section class="board__data">
+      <div class="board__data--height">
+        <p>Mi Altura:</p>
+        <input type="number" class="board__data--height-input" placeholder="1.80"></input>
+        <p class="data__input1">cm</p>
+      </div>
+      <div class="board__data--weight">
+        <p>Mi Peso:</p>
+        <input type="number" class="board__data--weight-input" placeholder="80"></input>
+        <p class="data__input2">kg</p>
+      </div>
+      <div class="board__data--send">
+        <input type="submit" class="board__data--send-input" value="Ver mi BMI">
+      </div>
+      <div class="board__data--welcome">
+        <h3>¡Bienvenido!</h3>
+        <p>Ingresa la información requerida y en segundos tendrás tu BMI.</p>
+      </div>
+    </section>
+  </section>
+  <article class="results__data--info inactive">
+    <h2 class="results__data--info-text inactive"></h2>
+    <h2 class="results__data--info-type inactive"></h2>
+    <div class="results__data--info-barInfo inactive">
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <img src="./images/images_lower/triangle-low.svg" class="imgActive1 inactive" alt="triangle-low">
+      <img src="./images/images_excellent/triangle-excellent.svg" class="imgActive2 inactive" alt="triangle-excellet">
+      <img src="./images/images_neutral/triangle-neutral.svg" class="imgActive3 inactive" alt="triangle-neutral">
+      <img src="./images/images_danger/triangle-danger.svg" class="imgActive4 inactive" alt="triangle-danger">
+      <img src="./images/images_extrem/triangle-extrem.svg" class="imgActive5 inactive" alt="triangle-extrem">
+      <img src="./images/images_max/triangle-max.svg" class="imgActive6 inactive" alt="triangle-max">
+    </div>
+    <p class="results__data--info-advice inactive"></p>
+  </article>
+  <section class="main__information main__information--space">
+    <article class="main__information--text">
+      <h2>¿Qué es el BMI?</h2>
+      <p>El Índice de Masa Corporal (BMI) evalúa la relación entre peso y altura para estimar si una persona tiene un peso saludable. Se calcula dividiendo el peso en kg por el cuadrado de la altura en metros. Aunque útil para una idea general de la salud, el BMI no considera la composición corporal, masa muscular, distribución de grasa, edad y género. Por lo tanto, se recomienda consultar a profesionales de la salud para una evaluación más completa y precisa.</p>
+      <div class="main__information--img">
+        <img src="./images/Hombre-entrenando.jpg" alt="Hombre escucha musica mientras entrena">
+      </div>
+    </article>
+    <article class="main__information--text">
+      <h2>¿Es el BMI una fuente confiable?</h2>
+      <p>El BMI es una herramienta ampliamente utilizada para evaluar el estado general de peso de una persona en relación con su altura, tal como ya lo habia mecionado. Sin embargo, como cualquier herramienta de medición, tiene sus limitaciones y no siempre refleja de manera precisa la salud y la composición corporal de una persona. Cabe recalcar que esta es una herramienta de gran utilidad para analizar tu salud y tener una idea de como esta tu salud, aunque tenga limitaciones no significa que no sea confiable.</p>
+      <div class="main__information--img">
+        <img src="./images/Mujer pesandose.jpg" alt="Mujer se pesa para ver sus resulados">
+      </div>
+    </article>
+    <article class="main__information--text">
+      <h2>¿Cuales son esas limtaciones?</h2>
+      <details>
+        <summary>No distinge entre grasa y músculo</summary>
+        <p>El BMI solo tiene en cuenta el peso en relación con la altura, lo que significa que no diferencia entre el peso de la grasa y el peso del músculo. Esto puede ser problemático para personas con mucha masa muscular, ya que pueden tener un BMI alto pero no ser necesariamente obesas o poco saludables.</p>
+      </details>
+      <details>
+        <summary>No considera la distribución de grasa</summary>
+        <p>La ubicación de la grasa en el cuerpo también es relevante para la salud. Las personas con una distribución de grasa visceral (alrededor de los órganos internos) tienen un mayor riesgo de problemas de salud en comparación con aquellos que almacenan grasa subcutánea (debajo de la piel).</p>
+      </details>
+      <details>
+        <summary>No considera factores inividuales</summary>
+        <p> El BMI no tiene en cuenta otros factores importantes que influyen en la salud, como la edad, el género, la genética, la estructura ósea y la composición corporal.</p>
+      </details>
+      <details>
+        <summary>Limitado en niños y ancianos</summary>
+        <p>El BMI puede ser menos preciso en niños en crecimiento y en adultos mayores, ya que sus necesidades nutricionales y composición corporal cambian con la edad.</p>
+      </details>
+    </article>
+    <article class="main__information--text">
+      <h2>Conclusión</h2>
+      <p>El BMI es una herramienta ampliamente utilizada para evaluar la relación entre el peso y la altura. Su función es proporcionar una estimación rápida de la composición corporal y categorizar a las personas en rangos de peso, como bajo peso, peso normal, sobrepeso y obesidad. Esto es crucial para evaluar la salud y el riesgo de enfermedades relacionadas con el peso. Sin embargo, el BMI tiene limitaciones, ya que no considera la distribución de grasa y masa muscular, lo que puede llevar a estimaciones inexactas. Por lo tanto, es esencial consultar a profesionales de la salud para obtener un diagnóstico más preciso. Adoptar un enfoque equilibrado con una dieta saludable y ejercicio es clave para mantener un BMI saludable y un bienestar general.</p>
+      <div class="main__information--img">
+        <img src="./images/Mujer-trota.jpg" alt="Mujer se pesa para ver sus resulados">
+      </div>
+    </article>
+  </section>
+</body>
+</html>

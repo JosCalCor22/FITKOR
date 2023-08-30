@@ -1,0 +1,30 @@
+@media(max-width: 500px){
+  .main__board{
+    .board__data{
+      width: 80%;
+      left: 10%;
+    }
+  }
+  .main__information{
+    width: 90%;
+  }
+}
+
+@media(max-width: 410px){
+  .main__information--text{
+    details{
+      summary{
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media(max-width: 400px){
+  .main__board{
+    .board__data{
+      width: 94%;
+      left: 3%;
+    }
+  }
+}

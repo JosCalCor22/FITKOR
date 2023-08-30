@@ -1,0 +1,207 @@
+.main__board{
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  width: 70%;
+  &--article{
+    place-items: center;
+    display: grid;
+    gap: 20px;
+    padding: 80px 0;
+    border-bottom-right-radius: 20px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(255, 108, 0,  .6) 99%);
+    &-icon{
+      align-items: center;
+      display: flex;
+      gap: 10px;
+      margin-bottom: 70px;
+      &-slogan{
+        line-height: 18px;
+        margin-top: 10px;
+        h2{
+          font-size: 2.2rem;
+          span{
+            color: $Primary-color;
+          }
+        }
+      }
+    }
+    h1{
+      min-width: 200px;
+      max-width: 300px;
+    }
+    p{
+      min-width: 200px;
+      max-width: 300px;
+    }
+  }
+  .board__data{
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, 50px);
+    justify-content: center;
+    position: absolute;
+    display: grid;
+    left: 85%;
+    top: 25%;
+    width: 300px;
+    padding: 20px;
+    row-gap: 20px;
+    column-gap: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 #000;
+    &--height, &--weight{
+      input{
+        position: absolute;
+        width: 38%;
+        height: 35px;
+        padding: 10px;
+        font-size: 1.4rem;
+        border-radius: 10px;
+        border: 1px solid rgb(0, 0, 0, 0.2);
+      }
+      .data__input1{
+        position: relative;
+        z-index: 100;
+        height: 24px;
+        width: 18px;
+        top: 6px;
+        left: 68%;
+        font-weight: bolder;
+        color: $Primary-color;
+        background-color: #fff;
+      }
+      .data__input2{
+        position: relative;
+        z-index: 100;
+        height: 24px;
+        width: 18px;
+        top: 6px;
+        left: 78%;
+        font-weight: bolder;
+        color: $Primary-color;
+        background-color: #fff;
+      }
+    }
+    &--send{
+      grid-column: 1 / 3;
+      &-input{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        font-weight: bolder;
+        border-radius: 10px;
+        transition: all .5s ease;
+        background-color: transparent;
+        border: 1px solid $Secondary-color;
+      }
+      &-input:hover, &-input:active{
+        border: none;
+        background-color: $Secondary-color;
+      }
+    }
+    &--welcome{
+      padding: 10px;
+      grid-column: 1 / 3;
+      background-color: $Secondary-color;
+      border-radius: 10px 17% 17% 10px / 10px 49% 51% 10px;
+      h3{
+        font-size: 2.2rem;
+      }
+      p{
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+.results__data--info{
+  flex-direction: column;
+  display: flex;
+  width: 75%;
+  gap: 4px;
+  padding: 15px;
+  margin: 30px auto 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0;
+  background-color: #ffebde;
+  animation: appearAnimation 2s ease-out;
+  &-text{
+    font-size: $Font-size-subtext;
+    color: $Primary-color;
+    font-weight: bold;
+  }
+  &-text, &-advice, &-type{
+    word-break: break-word;
+    justify-content: center;
+    text-align: center;
+    display: flex
+  }
+  &-barInfo{
+    grid-template-columns: repeat(6, auto);
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 10px;
+    border-radius: 12px;
+    margin: 5px 0 25px 0;
+    p:nth-child(1){
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      background-color: #1A8FE3;
+    }
+    p:nth-child(2){
+      background-color: #6BF178;
+    }
+    p:nth-child(3){
+      background-color: #FF8C42;
+    }
+    p:nth-child(4){
+      background-color: #FF3C38;
+    }
+    p:nth-child(5){
+      background-color: #B80C09;
+    }
+    p:nth-child(6){
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+      background-color: #501537;
+    }
+    .imgActive1{
+      position: absolute;
+      display: flex;
+      top: 10px;
+      left: 6%;
+    }
+    .imgActive2{
+      position: absolute;
+      display: flex;
+      top: 10px;
+      left: 22%;
+    }
+    .imgActive3{
+      position: absolute;
+      display: flex;
+      top: 10px;
+      left: 39%;
+    }
+    .imgActive4{
+      position: absolute;
+      display: flex;
+      top: 10px;
+      left: 56%;
+    }
+    .imgActive5{
+      position: absolute;
+      display: flex;
+      top: 10px;
+      left: 73%;
+    }
+    .imgActive6{
+      position: absolute;
+      display: flex;
+      top: 10px;
+      left: 90%;
+    }
+  }
+}

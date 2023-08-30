@@ -1,0 +1,57 @@
+.main__board {
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  width: 70%;
+  padding: 50px 0;
+}
+.main__board--article {
+  display: grid;
+  gap: 20px;
+  margin: 0 auto;
+}
+.main__board--article-icon {
+  margin-bottom: 60px;
+}
+.main__board--article h1 {
+  min-width: 200px;
+  max-width: 300px;
+}
+.main__board--article p {
+  min-width: 200px;
+  max-width: 350px;
+}
+.main__board .board__data {
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, 50px);
+  justify-content: center;
+  position: absolute;
+  display: grid;
+  left: 85%;
+  top: 40%;
+  width: 250px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin-right: 50px;
+}
+.main__board .board__data--height input, .main__board .board__data--weight input {
+  width: 100%;
+}
+.main__board .board__data--send {
+  grid-column: 1/3;
+}
+.main__board .board__data--send-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
+}
+.main__board .board__data--info {
+  grid-column: 1/3;
+}
+.main__board .board__data--info-text, .main__board .board__data--info-advice, .main__board .board__data--info-type {
+  word-break: break-word;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}/*# sourceMappingURL=main.css.map */

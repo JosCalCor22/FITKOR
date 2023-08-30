@@ -1,0 +1,20 @@
+.main__information {
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
+  display: grid;
+  width: 100%;
+  margin: 50px 0;
+  padding: 0 40px;
+}
+.main__information--img {
+  display: flex;
+  grid-column: 1/2;
+}
+.main__information--img img {
+  width: 100%;
+  margin: auto 0;
+  border-radius: 10px;
+}
+.main__information--text {
+  grid-column: 2/3;
+}/*# sourceMappingURL=main-information.css.map */

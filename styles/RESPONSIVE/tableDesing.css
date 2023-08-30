@@ -1,0 +1,80 @@
+@media (max-width: 780px) {
+  .main__board .board__data {
+    width: 260px;
+    left: 83%;
+  }
+  .main__board .board__data--weight input, .main__board .board__data--height input {
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 680px) {
+  .main__board {
+    width: 100%;
+  }
+  .main__board--article {
+    padding-top: 50px;
+  }
+  .main__board--article-icon {
+    margin-bottom: 50px;
+  }
+  .main__board .board__data {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    width: 75%;
+    top: 87%;
+    left: 13%;
+  }
+  .main__board .board__data--height {
+    grid-column: 1/2;
+  }
+  .main__board .board__data--height .data__input1 {
+    left: 72%;
+  }
+  .main__board .board__data--height input {
+    width: 26%;
+  }
+  .main__board .board__data--weight {
+    grid-column: 2/3;
+  }
+  .main__board .board__data--weight .data__input2 {
+    left: 82%;
+  }
+  .main__board .board__data--weight input {
+    width: 26%;
+  }
+  .main__board .board__data--send {
+    grid-column: 3/4;
+    margin-left: 10px;
+  }
+  .main__board .board__data--send input {
+    width: 100%;
+    height: 57px;
+  }
+  .main__board .board__data--welcome {
+    grid-column: 1/4;
+    margin: 0 auto;
+    width: 85%;
+    padding: 10px 20px;
+  }
+  .results__data--info {
+    margin-top: 190px;
+  }
+  .main__information {
+    width: 75%;
+    margin: 40px auto;
+  }
+  .main__information--space {
+    margin-top: 170px;
+  }
+}
+@media (max-width: 650px) {
+  .main__board .board__data {
+    width: 70%;
+    left: 16%;
+  }
+}
+@media (max-width: 560px) {
+  .results__data--info {
+    width: 90%;
+  }
+}/*# sourceMappingURL=tableDesing.css.map */
